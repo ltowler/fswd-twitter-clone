@@ -1,0 +1,267 @@
+// Login and Signup
+.back-button {
+  background-color: #1d9bf0;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 18px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background-color: #1a8cd8;
+}
+
+
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 400px;
+  background-color: white;
+  border: 1px solid #e1e8ed;
+  border-radius: 16px;
+  padding: 35px;
+  box-sizing: border-box;
+}
+
+.auth-card h1 {
+  font-size: 28px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.twitter-logo {
+  color: #1d9bf0;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  color: #536471;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+
+  border: 1px solid #cfd9de;
+  border-radius: 6px;
+
+  box-sizing: border-box;
+  outline: none;
+}
+
+.form-group input:focus {
+  border-color: #1d9bf0;
+}
+
+.auth-button {
+  width: 100%;
+  background-color: #1d9bf0;
+  color: white;
+
+  border: none;
+  border-radius: 25px;
+
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.auth-button:hover {
+  background-color: #1a8cd8;
+}
+
+.auth-link {
+  text-align: center;
+  margin-top: 25px;
+  color: #536471;
+}
+
+.auth-link a {
+  color: #1d9bf0;
+  text-decoration: none;
+}
+
+.auth-link a:hover {
+  text-decoration: underline;
+}
+
+// Page
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f8fa;
+  color: #0f1419;
+}
+
+.app-container {
+  min-height: 100vh;
+}
+
+// Navbar
+.navbar {
+  height: 55px;
+  padding: 0 30px;
+  border-bottom: 1px solid #eff3f4;
+  background-color: white;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  color: #1d9bf0;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.navbar button {
+  background-color: #1d9bf0;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+// Main feed
+.feed-container {
+  max-width: 600px;
+  margin: 30px auto;
+  min-height: 100vh;
+}
+
+.feed-container h1 {
+  font-size: 24px;
+  margin: 0 0 10px;
+  padding: 0;
+  border-bottom: none;
+}
+
+.logged-in {
+  margin: 0 0 25px;
+  padding: 0;
+  color: #536471;
+  font-size: 14px;
+}
+
+// Tweet form
+.tweet-form {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 25px;
+  border: 1px solid #e1e8ed;
+  border-radius: 12px;
+}
+
+.tweet-form h2 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.tweet-form textarea {
+  width: 100%;
+  min-height: 80px;
+  padding: 10px 0;
+  border: none;
+  outline: none;
+  resize: none;
+  box-sizing: border-box;
+
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+}
+
+.tweet-form button {
+  display: block;
+  margin: 10px 0 0 auto;
+
+  background-color: #1d9bf0;
+  color: white;
+  border: none;
+  border-radius: 20px;
+
+  padding: 9px 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+// Individual tweets
+.tweet-card {
+  background-color: white;
+  border: 1px solid #e1e8ed;
+  border-radius: 12px;
+  padding: 18px 22px;
+  margin-bottom: 15px;
+}
+
+.tweet-card:hover {
+  background-color: #f7f9f9;
+}
+
+.tweet-card h3 {
+  margin: 0 0 8px;
+  font-size: 16px;
+}
+
+.tweet-card a {
+  color: #0f1419;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.tweet-card a:hover {
+  text-decoration: underline;
+}
+
+.tweet-card p {
+  margin: 0 0 12px;
+  line-height: 1.4;
+}
+
+.tweet-card img {
+  max-width: 100%;
+  border-radius: 15px;
+  margin-top: 10px;
+}
+
+.tweet-card button {
+  background: none;
+  border: none;
+  color: #536471;
+  padding: 5px 0;
+  cursor: pointer;
+}
+
+.tweet-card button:hover {
+  color: #f4212e;
+}
+
+// Errors
+.error-message {
+  color: #f4212e;
+}

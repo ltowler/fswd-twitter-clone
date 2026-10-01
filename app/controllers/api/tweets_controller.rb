@@ -12,7 +12,7 @@ module Api
       @tweet = user.tweets.new(tweet_params)
 
       if @tweet.save
-        TweetMailer.notify(@tweet).deliver!
+       # TweetMailer.notify(@tweet).deliver!
         render 'api/tweets/create'
       end
     end
@@ -41,7 +41,7 @@ module Api
       user = User.find_by(username: params[:username])
 
       if user
-        @tweets = user.tweets
+       @tweets = user.tweets.order(created_at: :desc)
         render 'api/tweets/index'
       end
     end

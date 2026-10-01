@@ -6,10 +6,11 @@ module Api
       if @user.save
         render 'api/users/create'
       else
-        render json: {
-          success: false
-        }
-      end
+  render json: {
+    success: false,
+    errors: @user.errors.full_messages
+  }, status: :unprocessable_entity
+end
     end
 
     private
